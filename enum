@@ -3,5 +3,5 @@ systeminfo
 gpresult  
 systemsettings
 dsregcmd  
-rundll32.exe C:\Windows\system32\davclnt.dll,DavSetCookie 
+rundll32
 cmd
