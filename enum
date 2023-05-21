@@ -4,3 +4,4 @@ gpresult
 systemsettings
 dsregcmd  
 rundll32.exe C:\Windows\system32\davclnt.dll,DavSetCookie 
+cmd
