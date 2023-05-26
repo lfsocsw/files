@@ -1,1 +1,2 @@
 wmic process call create "cmd.exe /c mkdir
+notepad
