@@ -34,7 +34,6 @@ wmic service brief
 wmic product list brief
 wmic baseboard list full
 \.ssh\known_hosts
-\appdata\roaming\Mozilla\firefox\profiles
 mimikatz.exe
 reg query hklm\software\OpenSSH
 reg query hklm\software\OpenSSH\Agent
