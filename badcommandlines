@@ -1,3 +1,4 @@
 wmic process call create "cmd.exe /c mkdir
 notepad.exe
 winword.exe
+wmic
