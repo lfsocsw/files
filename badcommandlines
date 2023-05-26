@@ -1,4 +1,76 @@
-wmic process call create "cmd.exe /c mkdir
-notepad.exe
-winword.exe
-wmic
+cmd.exe /C "wmic path win32_logicaldisk get caption,filesystem,freespace,size,volumename"
+cmd /c vssadmin create shadow /for=C: > C:\Windows\Temp\
+cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3\Windows\NTDS\ntds.dit C:\Windows\Temp > C:\Windows\Temp\
+wmic process call create "ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\pro
+wmic process call create "cmd.exe /c ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\Pro"
+wmic process call create "cmd.exe /c mkdir C:\Windows\Temp\tmp & ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\tmp\"
+"cmd.exe" /c wmic process call create "cmd.exe /c mkdir C:\windows\Temp\McAfee_Logs & ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\McAfee_Logs\"
+cmd.exe /Q /c wmic process call create "cmd.exe /c mkdir C:\Windows\Temp\tmp & ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\tmp\" 1> \\127.0.0.1\ADMIN$\
+"cmd.exe /c "netsh interface portproxy add v4tov4 listenaddress=0.0.0.0
+"cmd.exe /c netsh interface portproxy add v4tov4 listenport=
+Get-EventLog security -instanceid 4624
+cmd.exe /Q /c dir 1>\\127.0.0.1\ADMIN$
+arp -a
+curl www.ip-api.com
+dnscmd . /enumrecords /zone
+dnscmd . /enumzones
+ipconfig /all
+ldifde.exe -f c:\windows\temp\
+net localgroup administrators
+net group /dom
+net group "Domain Admins" /dom
+netsh interface firewall show all
+netsh interface portproxy show all
+netsh interface portproxy show v4tov4
+netsh firewall show all
+netsh portproxy show v4tov4
+netstat -ano
+reg query hklm\software\
+systeminfo
+tasklist /v
+whoami
+wmic volume list brief
+wmic service brief
+wmic product list brief
+wmic baseboard list full
+\.ssh\known_hosts
+\appdata\roaming\Mozilla\firefox\profiles
+mimikatz.exe
+reg query hklm\software\OpenSSH
+reg query hklm\software\OpenSSH\Agent
+reg query hklm\software\realvnc
+reg query hklm\software\realvnc\vncserver
+reg query hklm\software\realvnc\Allusers
+reg query hklm\software\realvnc\Allusers\vncserver
+\putty\session
+reg save hklm\sam ss.dat
+reg save hklm\system sy.dat
+7z.exe a -p 
+C:\Windows\system32\pcwrun.exe C:\Users\Administrator\Desktop\Win.exe
+C:\Windows\System32\cmdbak.exe /c ping -n 1 127.0.0.1 >
+C:\Windows\temp\putty.log
+C:\Windows\Temp\tmp.log
+"cmd.exe" /c dir \\127.0.0.1\C$ /od
+"cmd.exe" /c ping âa ân 1 
+cmd.exe /Q /c cd 1> \\127.0.0.1\ADMIN$
+net use \\127.0.0.1\IPC$ /y /d
+powershell start-process -filepath c:\windows\temp\
+cmd /c whoami
+xcopy C:\windows\temp\hp d:\
+cmd.exe /C dir /S \\
+cmd.exe /Q /c cd 1> \\127.0.0.1\ADMIN$\__<timestamp value> 2>&1
+cmd.exe /Q /c net group "domain admins" /dom 1>\\127.0.0.1\ADMIN$\__<timestamp value> 2>&1
+cmd.exe /Q /c wmic process call create "cmd.exe /c mkdir C:\Windows\Temp\tmp & ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\tmp\" 1> \\127.0.0.1\ADMIN$\<timestamp value> 2>&1
+xcopy C:\windows\temp\hp d:\
+ldifde.exe -f c:\windows\temp\cisco_up.txt -p subtree
+makecab ..\backup\210829-020000.zip ..\webapps\adssp\html\Lock.lic
+c$\users\public\Appfile\registry\SYSTEM" ..\backup\210829-020000.zip
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9999 
+netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=9999
+start-process -filepath c:\windows\temp\<filename>.bat -windowstyle hidden 1
+wmic process call create "cmd.exe /c mkdir C:\users\public\Appfile & ntdsutil \"ac i ntds\" ifm \"create full C:\users\public\Appfile\" q q
+wmic process call create "ntdsutil \"ac i ntds\" ifm \"create full C:\Windows\Temp\"
+cmd.exe /C dir /S \\* >> *
+cmd.exe /Q /c * 1> \\127.0.0.1\ADMIN$
+powershell start-process -filepath c:\windows\temp\*.
+C:\Users\Public\Appfile
